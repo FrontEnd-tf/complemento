@@ -1,242 +1,171 @@
-html 
-{
-    line-height: 1.15; 
-    -webkit-text-size-adjust: 100%; 
+/**
+ * 1. Always reset this sucks.
+ * 2. Inherit from default setting
+ */
+
+* {
+  margin: 0; /* 1 */
+  padding: 0; /* 1 */
+  border: 0; /* 1 */
+  background-repeat: no-repeat; /* 1 */
+  box-sizing: inherit; /* 2 */
 }
 
+/**
+ * 1. Prevent certain mobile browsers from automatically zooming fonts.
+ * 2. Border box sizing 
+ * 3. Default scroll behavior (not smooth)
+ */
 
-body
-{
-    margin: 0;
+html {
+  -ms-text-size-adjust: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 1 */
+  box-sizing: border-box; /* 2 */
+  scroll-behavior: auto; /* 3 */
 }
 
+/**
+ * 1. Set default font styles
+ * 2. Beautiful fonts again
+ * 3. Prevent horizontal scroll
+ */
 
-main
-{
-    display: block;
+body {
+  font-size: 16px; /* 1 */
+  -moz-osx-font-smoothing: grayscale; /* 2 */
+  -webkit-font-smoothing: antialiased; /* 2 */
 }
 
+/**
+ * All Headings look the same
+ */
 
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1em;
+  font-weight: normal;
 }
 
+/**
+ * 1. Reset link styles 
+ * 2. Sized links
+ * 3. Remove the gray background on active links in IE 10.
+ */
 
-hr
-{
-    box-sizing: content-box; 
-    height: 0; 
-    overflow: visible; 
+a {
+  text-decoration: none; /* 1 */
+  color: inherit; /* 1 */
+  display: inline-block; /* 2 */
+  background-color: transparent; /* 3 */
 }
 
+/**
+ * No bullets anymore
+ */
 
-pre
-{
-    font-family: monospace, monospace; 
-    font-size: 1em; 
+ol,
+ul {
+  list-style: none;
 }
 
-
-a
-{
-    background-color: transparent;
-}
-
-
-abbr[title]
-{
-    border-bottom: none; 
-    text-decoration: underline; 
-    text-decoration: underline dotted; 
-}
-
-
-b,
-strong
-{
-    font-weight: bolder;
-}
-
-
-code,
-kbd,
-samp
-{
-    font-family: monospace, monospace; 
-    font-size: 1em; 
-}
-
-
-small
-{
-    font-size: 80%;
-}
-
-
-sub,
-sup 
-{
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sub
-{
-    bottom: -0.25em;
-}
-
-sup
-{
-    top: -0.5em;
-}
-
-
-img
-{
-    border-style: none;
-}
-
+/**
+ * Remove all default styles and all elements look the same 
+ */
 
 button,
 input,
 optgroup,
 select,
-textarea 
-{
-    font-family: inherit; 
-    font-size: 100%; 
-    line-height: 1.15; 
-    margin: 0; 
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  overflow: visible;
+  border: 0;
+  outline: 0;
+  font: inherit;
+  -webkit-font-smoothing: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+  background: none;
+  vertical-align: top;
 }
 
+/**
+ * Avoid no background on Edge and IE 
+ */
 
-button,
-input { 
-    overflow: visible;
+option {
+  background-color: inherit;
 }
 
+/**
+ * Set a color on active state 
+ */
 
-button,
-select 
-{ 
-    text-transform: none;
+a:active,
+button:active {
+  color: inherit;
 }
 
+/**
+ * Prevent chrome autofill style  
+ */
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-    -webkit-appearance: button;
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+  -webkit-transition-delay: 9999s;
 }
 
+/**
+ * You should define size for textarea
+ */
 
-button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner 
-{
-    border-style: none;
-    padding: 0;
+textarea {
+  resize: none;
 }
 
+/**
+ * Pointer cursor for buttons
+ */
 
-button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring 
-{
-    outline: 1px dotted ButtonText;
+input[type="button"],
+button {
+  cursor: pointer;
 }
 
+/**
+ * Pointer default for disabled buttons
+ */
 
-fieldset
-{
-    padding: 0.35em 0.75em 0.625em;
+button[disabled],
+html input[disabled] {
+  cursor: default;
 }
 
+/**
+ * 1. Remove space after each image
+ * 2. Ensure responsive images
+ * 3. Remove the border on images inside links in IE 10.
+ */
 
-
-legend
-{
-    box-sizing: border-box; 
-    color: inherit; 
-    display: table; 
-    max-width: 100%; 
-    padding: 0; 
-    white-space: normal; 
+img {
+  display: block; /* 1 */
+  max-width: 100%; /* 2 */
+  height: auto; /* 2 */
+  border-style: none; /* 3 */
 }
 
+/**
+ * Collapse border spacing
+ */
 
-progress
-{
-    vertical-align: baseline;
-}
-
-
-textarea
-{
-    overflow: auto;
-}
-
-
-[type="checkbox"],
-[type="radio"]
-{
-    box-sizing: border-box; 
-    padding: 0; 
-}
-
-
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button
-{
-    height: auto;
-}
-
-
-[type="search"]
-{
-    -webkit-appearance: textfield; 
-    outline-offset: -2px; 
-}
-
-
-[type="search"]::-webkit-search-decoration
-{
-    -webkit-appearance: none;
-}
-
-
-::-webkit-file-upload-button
-{
-    -webkit-appearance: button;
-    font: inherit; 
-}
-
-
-details
-{
-    display: block;
-}
-
-
-summary
-{
-    display: list-item;
-}
-
-
-template
-{
-    display: none;
-}
-
-
-[hidden] 
-{
-    display: none;
+table {
+  border-collapse: collapse;
 }
