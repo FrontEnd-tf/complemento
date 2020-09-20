@@ -1,0 +1,54 @@
+
+
+.filaPrecios
+{
+    position: relative;
+    padding: 175px 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.grupoPrecios
+{
+
+}
+
+.tabla
+{
+    border: 1px solid #dfdfdf;
+    
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+
+.listadoCaracteristicas
+{
+    margin-bottom: 30px;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+.botonSeleccionar
+{
+    /* display: inline-block; */
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #31aae2;
+    border-radius: 40px;
+    color: #FFFFFf;
+    padding: 15px 40px;
+    margin-bottom: 29px;
+    /* overflow: hidden; */
+    /* position: relative; */
+    /* z-index: 1; */
+    /* border: none; */
+}
