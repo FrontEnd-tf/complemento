@@ -1,3 +1,33 @@
+/* a 
+{
+    text-decoration: none;
+}
+
+h4
+{
+   
+    
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+} */
+
+body
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+
+.contenidoCentrado
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 .filaPrecios
@@ -7,33 +37,122 @@
 
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    
 }
 
-.grupoPrecios
-{
-
-}
 
 .tabla
 {
     border: 1px solid #dfdfdf;
+    text-align: center;
     
     display: flex;
     flex-direction: column;
-    
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    flex-basis: 300px;
+    width: 300px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
 }
 
+
+.tabla:hover {
+    margin-top: -20px;
+    border: 4px solid #ffffff;
+    cursor: pointer;
+    box-shadow: 0px 3px 70px 0px rgba(0, 0, 0, 0.11); 
+
+}
+
+
+.titulo
+{
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    word-spacing: -3.6px;
+    padding-top: 44px;
+    padding-bottom: 14px;
+    font-weight: bold;
+
+}
+
+.linea
+{
+    background-color: #343434;
+    height: 1px;
+    margin-bottom: 6px;
+}
+
+
+.tamanolinea1
+{
+    width: 30%;
+
+}
+
+.tamanolinea2
+{
+    width: 15%;
+}
+
+
+.grupoPrecio
+{
+    padding-top: 50px;
+    padding-bottom: 35px;
+
+}
+
+.grupoPrecio_precio
+{
+    color: #212121;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 27px;
+}
+
+.grupoPrecio_tiempo
+{
+    font-size: 14px;
+    color: #b9b9b9;
+    line-height: 30px;
+}
 
 .listadoCaracteristicas
 {
     margin-bottom: 30px;
+    width: 100%;
 }
 
-a 
-{
-    text-decoration: none;
+ul.listadoCaracteristicas li:nth-child(2n+1) {
+    background-color: #f1f1f1;
 }
+
+.caracteristicasElemento
+{
+    font-size: 14px;
+    line-height: 60px;
+    color: #212121;
+
+}
+
+.resalteAzul
+{
+    color: #31aae2;   
+}
+
 
 .botonSeleccionar
 {
