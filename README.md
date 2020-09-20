@@ -1,13 +1,11 @@
 Complemento 01
 =====================
-<a href="https://friendly-jepsen-8ee76d.netlify.app/index.html">Web desde netlify</a><br>
-<a href="https://sosan.github.io/complemento/index.html">Web desde github pages</a><br>
+<a href="https://cranky-bhabha-b0d6c6.netlify.app/index.html">Web desde netlify</a><br>
 <img src="./doc/complemento.png">
 
 Complmento 02
 ================
-<a href="https://friendly-jepsen-8ee76d.netlify.app/indexComplemento_02.html">Web desde netlify</a><br>
-<a href="https://sosan.github.io/complemento/indexComplemento_02.html">Web desde github pages</a><br>
+<a href="https://cranky-bhabha-b0d6c6.netlify.app/indexComplemento_02.html">Web desde netlify</a><br>
 <img src="./doc/complementoTarifa.png">
 
 
