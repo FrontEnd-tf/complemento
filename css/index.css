@@ -7,12 +7,12 @@
     /* Color */
     --color-grey-light: #c6c6c6;
     --color-grey-medium: #929292;
-    --color-grey-dark: #3a3a3a;
+    --color-grey-dark: #13a367;
     --white: #f2f2f2;
     --black: #080808;
 
     /* Card */
-    --card_fondo: #f4f4f4;
+    --card_fondo: #e21515;
     --card-radius: 10px;
     --card-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
 
